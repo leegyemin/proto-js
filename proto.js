@@ -28,3 +28,11 @@ Car.method('speedDown', function () {
 Car.method('print', function () {
     console.log(`현재 ${this.carName}의 스피드는 ${this.speed} 입니다.`)
 });
+
+var racer1 = new Car('toyota', 120);
+racer1.speedUp();
+var racer2 = new Car('kamaro', 140);
+racer2.speedDown();
+
+racer1.print();
+racer2.print();
